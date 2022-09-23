@@ -3,7 +3,7 @@ pipeline {
        agent{
 
            label "built-in"
-
+           customWorkspace "/mnt/multibranch"
          }
 
        stages { 
