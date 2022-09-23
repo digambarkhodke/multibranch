@@ -1,11 +1,11 @@
 pipeline {
 
-       agent any{
-
-           label "built-in"
-           customWorkspace "/mnt/multibranch"
+       agent {
+	       label {
+                   label "built-in"
+                   customWorkspace "/mnt/multibranch"
          }
-
+       }
        stages { 
 
           stage('install-apache'){
